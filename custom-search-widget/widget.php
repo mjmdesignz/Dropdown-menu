@@ -230,7 +230,7 @@ echo do_shortcode( '[fontawesome icon="fa-user-md" circle="yes" size="38px" icon
 </div>
 <!--End Call Us and support -->
         		
-<!------------------------------------------------------------------------------------------------------- END Widget -->	
+<!-- END Widget -->	
         <?php
         echo '</div>';
         echo $after_widget;
