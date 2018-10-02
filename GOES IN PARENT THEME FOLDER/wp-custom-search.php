@@ -1,3 +1,4 @@
+<?php get_header(); ?>
 <?php 
 /* Template Name: Custom Search */
 
@@ -78,7 +79,7 @@ foreach ($posts as $post){
     <div class="or-statement">or</div>
     
 <!-- speciality drop down -->
-<form role="search" method="get" id="searchform" action="<?php bloginfo('url');?>/doctors/" >  
+<form role="search" method="get" id="searchform" action="<?php bloginfo('url');?>/search/" >  
     <div class="filters"> 
     <select class="drop-down" name="search_tax" id="search_tax" onchange="this.form.submit()">
 <?php //define default post category any to match all categories
@@ -167,7 +168,6 @@ foreach ($posts as $post){
     </select>
 </div>
 <div class="search_buttons">
-<input type="clear-button" id="searchclear" value="Clear" onclick="clearForm()" class="search-button"/>
 <input type="submit" id="searchsubmit" value="Search" class="search-button" />
 </div>
 </form>
@@ -243,14 +243,14 @@ foreach ($posts as $post){
                 <li class="list-item">
 
 
-<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'doctors' ) ) ); ?>" title="<?php echo $mtitle; ?>">
+<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'search' ) ) ); ?>" title="<?php echo $mtitle; ?>">
                    <?php if(isset($image) && $image != '' ) {
 							echo'<img style="float: left; padding: 0px 16px 0px 0px;" width="107" alt="' . $mtitle . '" src="' . $image . '"';
 							echo'<div style="clear:both;></div>"';
 						} ?>  
                 </a>  
                     <div>    
-					<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'doctors' ) ) ); ?>" title="<?php echo $mtitle; ?>" class="underline"><h3 class="title name<?php echo $post->ID ?>"><?php echo $mtitle; ?></h3>  </a>                    
+					<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'search' ) ) ); ?>" title="<?php echo $mtitle; ?>" class="underline"><h3 class="title name<?php echo $post->ID ?>"><?php echo $mtitle; ?></h3>  </a>                    
                     <div class="specialities">
 
                      <?php 
@@ -373,14 +373,14 @@ foreach ($posts as $post){
 
                 <li class="list-item">
 
-<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'doctors' ) ) ); ?>" title="<?php echo $mtitle; ?>">
+<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'search' ) ) ); ?>" title="<?php echo $mtitle; ?>">
                    <?php if(isset($image) && $image != '' ) {
 							echo'<img style="float: left; padding: 0px 16px 0px 0px;" width="107" alt="' . $mtitle . '" src="' . $image . '"';
 							echo'<div style="clear:both;></div>"';
 						} ?>  
                 </a>  
                     <div>    
-					<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'doctors' ) ) ); ?>" title="<?php echo $mtitle; ?>" class="underline"><h3 class="title name<?php echo $post->ID ?>"><?php echo $mtitle; ?></h3>  </a>                    
+					<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'search' ) ) ); ?>" title="<?php echo $mtitle; ?>" class="underline"><h3 class="title name<?php echo $post->ID ?>"><?php echo $mtitle; ?></h3>  </a>                    
                     <div class="specialities">
 
                      <?php 
@@ -505,14 +505,14 @@ foreach ($posts as $post){
 
                 
                 <li class="list-item" style="width: auto;">
-                <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'doctors' ) ) ); ?>" title="<?php echo $mtitle; ?>">
+                <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'search' ) ) ); ?>" title="<?php echo $mtitle; ?>">
                    <?php if(isset($image) && $image != '' ) {
 							echo'<img style="float: left; padding: 0px 16px 0px 0px;" width="107" alt="' . $mtitle . '" src="' . $image . '"';
 							echo'<div style="clear:both;></div>"';
 						} ?>  
                 </a>  
                     <div>    
-					<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'doctors' ) ) ); ?>" title="<?php echo $mtitle; ?>" class="underline"><h3 class="title name<?php echo $post->ID ?>"><?php echo $mtitle; ?></h3>  </a>
+					<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'search' ) ) ); ?>" title="<?php echo $mtitle; ?>" class="underline"><h3 class="title name<?php echo $post->ID ?>"><?php echo $mtitle; ?></h3>  </a>
                     
                    <div class="specialities">
 
@@ -589,3 +589,4 @@ foreach ($posts as $post){
 <?php 
     }
 } ?>
+<?php get_footer(); ?>

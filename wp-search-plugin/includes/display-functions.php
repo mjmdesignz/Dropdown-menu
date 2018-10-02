@@ -24,10 +24,10 @@ function wp_md_doctors_registrer_post_type() {
 				'name'
 				),
 			'labels' => array(
-				'name' => __( 'Find a Doctor' ),
-				'singular_name' => __( 'Doctor' ),
-				'add_new_item' => __( 'Add New Doctor' ),
-                'edit_item' => __( 'Edit Doctor' )
+				'name' => __( 'Add a person' ),
+				'singular_name' => __( 'Person' ),
+				'add_new_item' => __( 'Add New Person' ),
+                'edit_item' => __( 'Edit Person' )
 				),
 			'taxonomies' => array( 
 				'wp_md_speciality'
@@ -94,7 +94,7 @@ $meta_box = array(
 	/* first name */
 	array (
             'name' => 'Full Name',
-            'desc' => 'Physician Full Name',
+            'desc' => 'Persons Full Name',
             'id' => $prefix . 'first',
             'type' => 'text',
             'std' => '',
@@ -105,7 +105,7 @@ $meta_box = array(
 			
         array (
             'name' => 'Address',
-            'desc' => 'Please write the doctors adress',
+            'desc' => 'Please write the persons adress',
             'id' => $prefix . 'adress',
             'type' => 'text',
             'std' => ''
@@ -113,42 +113,42 @@ $meta_box = array(
 		
 		array(
             'name' => 'Phone',
-            'desc' => 'Please enter the doctors phone number',
+            'desc' => 'Please enter the persons phone number',
             'id' => $prefix . 'phone',
             'type' => 'text',
             'std' => ''
         ),
         array(
             'name' => 'Fax',
-            'desc' => 'Please write the doctors fax',
+            'desc' => 'Please write the persons fax',
             'id' => $prefix . 'fax',
             'type' => 'text',
             'std' => ''
         ),
         array(
             'name' => 'Email',
-            'desc' => 'Please write the doctors email',
+            'desc' => 'Please write the persons email',
             'id' => $prefix . 'website',
             'type' => 'text',
             'std' => ''
         ),
         array(
             'name' => 'School',
-            'desc' => 'Please write the doctors Medical School',
+            'desc' => 'Please write the persons Medical School',
             'id' => $prefix . 'school',
             'type' => 'text',
             'std' => ''
         ),
          array(
             'name' => 'Internship',
-            'desc' => 'Please write the doctors internship place',
+            'desc' => 'Please write the persons internship place',
             'id' => $prefix . 'internship',
             'type' => 'text',
             'std' => ''
         ),
         array(
             'name' => 'Fellowships',
-            'desc' => 'Please write the doctors Medical Fellowships',
+            'desc' => 'Please write the persons Medical Fellowships',
             'id' => $prefix . 'fellowship',
             'type' => 'text',
             'std' => ''
