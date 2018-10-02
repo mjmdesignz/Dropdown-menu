@@ -60,13 +60,8 @@ class wp_custom_search_plugin extends WP_Widget {
         }
         
 		//END ?>
-     
-     
-     
-     
-     
-     
-<!------------------------------------------------------------------------------------------------------- START Widget -->
+    
+<!-- START Widget -->
 
 <?php 
  
