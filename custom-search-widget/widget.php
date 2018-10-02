@@ -47,8 +47,7 @@ class wp_custom_search_plugin extends WP_Widget {
 	   $doctorByNameArray = array();
 	   
 
-		//wp_register_script('doctorSearch', plugin_dir_url(__FILE__) . '/js/doctorSearch.js', array('jquery'));
-		//wp_enqueue_script('doctorSearch');
+		//wp_enqueue_script('customSearch');
         // these are the widget options
         $title = apply_filters('widget_title', $instance['title']);
         echo $before_widget;
